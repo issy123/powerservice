@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
          version="3.0">
-    <display-name>wsproducer</display-name>
+    <display-name>lengteberekenen</display-name>
     <listener>
         <listener-class>
             com.sun.xml.ws.transport.http.servlet.WSServletContextListener
@@ -18,7 +18,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>jaxws</servlet-name>
-        <url-pattern>/wsproducer</url-pattern>
+        <url-pattern>/lengteberekenen</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

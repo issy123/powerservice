@@ -30,7 +30,7 @@ public class MijnService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/ismail/Downloads/TCIF-V2IAC-15-master (1)/TCIF-V2IAC-15-master/powerservice/ws-producer/src/main/webapp/WEB-INF/wsdl/PowerService.wsdl");
+            url = new URL("file:/C:/Users/ismail/Downloads/TCIF-V2IAC-15-master (1)/TCIF-V2IAC-15-master/powerservice/lengteberekenen/src/main/webapp/WEB-INF/wsdl/PowerService.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

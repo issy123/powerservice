@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/lengteberekenen/lengteberekenen.iml" filepath="$PROJECT_DIR$/lengteberekenen/lengteberekenen.iml" />
       <module fileurl="file://$PROJECT_DIR$/powerservice.iml" filepath="$PROJECT_DIR$/powerservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ws-producer/ws-producer.iml" filepath="$PROJECT_DIR$/ws-producer/ws-producer.iml" />
     </modules>
   </component>
 </project>

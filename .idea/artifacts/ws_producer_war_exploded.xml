@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="ws-producer" />
+          <element id="module-output" name="lengteberekenen" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.sun.xml.ws:jaxws-rt:2.2.8" />
@@ -33,9 +33,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/ws-producer/target/ws-producer/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/lengteberekenen/target/ws-producer/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="ws-producer/web/Web" />
+      <element id="javaee-facet-resources" facet="lengteberekenen/web/Web" />
     </root>
   </artifact>
 </component>

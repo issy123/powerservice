@@ -10,8 +10,7 @@
 	<name>Simple parent project for IAC purpose</name>
 
 	<modules>
-		<module>ws-producer</module>
-		<module>ws-consumer</module>
+		<module>lengteberekenen</module>
 	</modules>
 
 	<dependencyManagement>
