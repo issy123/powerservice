@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ws-producer:war">
+    <output-path>$PROJECT_DIR$/ws-producer/target</output-path>
+    <root id="archive" name="ws-producer.war">
+      <element id="artifact" artifact-name="ws-producer:war exploded" />
+    </root>
+  </artifact>
+</component>

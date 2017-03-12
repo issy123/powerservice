@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+        xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+        xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:req="http://schemas.hu.fnt.nl/berichten/request"
+        xmlns:rsp="http://schemas.hu.fnt.nl/berichten/response"
+        xmlns:flt="http://schemas.hu.fnt.nl/berichten/fault"
+        xmlns:tns="http://schemas.hu.fnt.nl/berichten/message"
+        targetNamespace="http://schemas.hu.fnt.nl/berichten/message">
+    <wsdl:types>
+        <xsd:schema>
+            <xsd:import namespace="http://schemas.hu.fnt.nl/berichten/request" schemaLocation="PowerRequest.xsd" />
+            <xsd:import namespace="http://schemas.hu.fnt.nl/berichten/response" schemaLocation="PowerResponse.xsd" />
+            <xsd:import namespace="http://schemas.hu.fnt.nl/berichten/fault" schemaLocation="fault.xsd" />
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="request">
+        <wsdl:part name="request" element="req:powerrequest" />
+    </wsdl:message>
+    <wsdl:message name="response">
+        <wsdl:part name="response" element="rsp:powerresponse" />
+    </wsdl:message>
+    <wsdl:message name="fault">
+        <wsdl:part name="fault" element="flt:powerFault" />
+    </wsdl:message>
+    <wsdl:portType name="WS-Interface">
+        <wsdl:operation name="calculatePower">
+            <wsdl:input message="tns:request" />
+            <wsdl:output message="tns:response" />
+            <wsdl:fault name="fault" message="tns:fault" />
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="WS-Binding" type="tns:WS-Interface">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="calculatePower">
+            <soap:operation soapAction="" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="fault">
+                <soap:fault name="fault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="mijnService">
+        <wsdl:port name="WS-Port" binding="tns:WS-Binding">
+            <soap:address location="http://www.examples.com/SayHello/" />
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

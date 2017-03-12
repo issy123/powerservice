@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://schemas.hu.fnt.nl/berichten/response"
+           targetNamespace="http://schemas.hu.fnt.nl/berichten/response">
+    <xs:element name="powerresponse" type="tns:response" />
+    <xs:complexType name="response">
+        <xs:all minOccurs="1">
+            <xs:element name="result" type="xs:integer" />
+        </xs:all>
+    </xs:complexType>
+</xs:schema>
